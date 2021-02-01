@@ -92,6 +92,7 @@ nav ul li a:hover{
 .section-one .container .text .description{
     font-size: 3vw;
 }
+
 .button{
     background:#FF8C00;
     width:20%;
@@ -99,17 +100,17 @@ nav ul li a:hover{
     justify-content: center;
     border-radius: 30px;
     margin-top: 1rem;
-    transition: transform .2s, color 1s;
+    transition: transform .2s;
+}
+.button:hover{
+    background:#d17300;
+    transform: scale(1.1);
 }
 .button p{
     color: black;
     font-size:3vw;
     transition: color .2s;
 } 
-.button:hover{
-    transform: scale(1.1);
-    background:#d17300;
-}
 .button:hover> p{
     color: #EAE7E8;
 }
@@ -126,12 +127,67 @@ nav ul li a:hover{
 /* -------section two------------*/
 .section-two{
     height:100vh;
+    padding: 1rem 0rem;
     background: rgb(211, 211, 15);
 }
-.section-three{
-    height:100vh;
-    background: rgb(15, 211, 103);
+.section-two .top{
+    display: flex;
 }
+.section-two .top .first{
+    width:25vw;
+    height:18rem;
+    background: red;
+}
+.section-two .top .second{
+    width:40vw;
+    height:33rem;
+    background: blue;
+    margin-left: 1rem;
+}
+.section-two .top .third{
+    margin-left: 1rem;
+    width:35vw;
+    height:20rem;
+    background: blueviolet;
+}
+
+/* -------section three-------- */
+.section-three{
+    width:100%;
+    height:100vh;
+    background-image: url(img/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-three .container{
+    width: 80%;
+    height:20%;
+    justify-content: space-around;
+    background: red;
+}
+.section-three .container> p{
+    display: flex;
+    justify-content: center;
+}
+.section-three .container> .maps{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:80%;
+    height:30%;
+}
+
+#googleMap{
+    justify-content: space-around;
+    width:50%;
+    height:50vh;
+}
+/* -------section four-------- */
 .section-four{
     height:100vh;
     background: rgb(211, 15, 146);
