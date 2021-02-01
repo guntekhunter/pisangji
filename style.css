@@ -175,35 +175,59 @@ nav ul li a:hover{
     grid-row: 1/3;
     background-image: url(img/18.jpg);
     background-size:cover;
-    image-filter
+    filter: grayscale(.4);
 }
 .img3{
     grid-column:6/8;
+    background-image: url(img/14.jpg);
+    background-size:cover;
+    filter: grayscale(.4);
 }
 .img4{
-
+    background-image: url(img/11.jpg);
+    background-size:cover;
+    filter: grayscale(.4);
+    
 }
 .img5{
     grid-column: 2/4;
+    background-image: url(img/12.jpg);
+    background-size:cover;
+    filter: grayscale(.4);
 }
 .img6{
-
+    background-image: url(img/13.jpg);
+    background-size:cover;
+    filter: grayscale(.4);
+    
 }
 .img7{
+    background-image: url(img/10.jpg);
+    background-size:cover;
+    filter: grayscale(.4);
     grid-column: 7/8;
     grid-row: 2/4;
-
+    
 }
 .img8{
+    background-image: url(img/16.jpg);
+    background-size:cover;
+    filter: grayscale(.4);
     grid-column: 1/3;
     
 }
 .img9{
+    background-image: url(img/15.jpg);
+    background-size:cover;
+    filter: grayscale(.4);
     grid-column: 3/5;
     
 }
 .img10{
     grid-column: 5/7;
+    background-image: url(img/17.jpg);
+    background-size:cover;
+    filter: grayscale(.4);
 }
 
 /* -------section three-------- */
