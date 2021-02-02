@@ -242,7 +242,7 @@ nav ul li a:hover{
     background-size: cover;
     justify-content: space-around;
     display: flex;
-    filter: brightness(-20);
+    filter: brightness(50%);
     justify-content: center;
     align-items: center;
 }
@@ -284,11 +284,119 @@ nav ul li a:hover{
 /* -------section four-------- */
 .section-four{
     height:100vh;
-    background: rgb(211, 15, 146);
+    align-items: center;
+    display: flex;
+    justify-content:space-around;
+}.section-four .title p{
+    font-size:3vw;
+    display:flex;
+    justify-content:center;
+    background: white;
 }
+.section-four .container{
+    align-items: center;
+    display: block;
+    justify-content:space-around;
+    width:53%;
+    height:80vh;
+}
+.section-four .form-wrapper{
+    position: relative;
+    height: 70%;
+}
+.section-four .form-background{
+    background-size: cover;
+    filter: saturate(2);
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    background-image: url(img/2-min.jpg);
+    position: absolute;
+}
+.section-four .form-wrapper .button{
+    z-index:4;
+}
+
+
+/* input animation */
+.form{
+    width:50%;
+    position:relative;
+    height:50px;
+    overflow: hidden;
+}
+.form input{
+    background: none;
+    width:100%;
+    height:100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    
+}
+.form label{
+    color: #EAE7E8;
+    position:absolute;
+    bottom:0px;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #FF8C00;
+    
+}
+.form label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom:-1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #FF8C00;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    
+}
+.content-name{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name{
+    transform:translateY(-150%);
+    font-size: 14px;
+    border: none;
+    color: #FF8C00;
+    
+    
+}
+.form input:focus + .label-name::after, .form input:valid + .label-name::after{
+    transform:translateX(0%);
+    visibility:visible;
+}
+/* section five */
+
+
 .section-five{
-    height:100vh;
-    background: rgb(15, 165, 211);
+    position: relative;
+    height:60vh;
+    background-image: url(img/4-min.jpg);
+    filter: brightness(50%);
+    background-size: cover;
+    bottom: 0;
+}
+footer{
+    height: 10vh;
+    width: 100%;
+    background: black;
+    top: 100%;
+    color: #EAE7E8;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
 }
 
 
