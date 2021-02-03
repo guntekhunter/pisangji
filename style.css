@@ -94,6 +94,7 @@ nav ul li a:hover{
 }
 
 .button{
+    cursor: pointer;
     background:#FF8C00;
     width:20%;
     display: flex;
@@ -265,21 +266,28 @@ nav ul li a:hover{
 }
 .section-three .container> .maps{
     margin-top: 2rem;
+    margin-bottom:2em;
     display: flex;
     justify-content:center;
     align-items: center;
     width:60%;
-    margin-left:10%;
+    height:68%;
+    margin-left:11%;
 }
-
-
 #googleMap{
-    height:80%;
+    height:100%;
 }
 .section-three .container .button{
     background:#FF8C00;
     font-size:.2vw;
-    margin-left:10%;
+    margin-left:11%;
+}
+.section-three .form-border{
+    justify-content: space-around;
+    height: 65%;
+    margin-left:11%;
+    border: 3px solid #FF8C00;
+    position: absolute;
 }
 /* -------section four-------- */
 .section-four{
@@ -297,7 +305,7 @@ nav ul li a:hover{
     align-items: center;
     display: block;
     justify-content:space-around;
-    width:53%;
+    width:55%;
     height:80vh;
 }
 .section-four .form-wrapper{
@@ -306,7 +314,6 @@ nav ul li a:hover{
     display: grid;
     grid-template-columns: 1fr 8fr 10fr 1fr;
     grid-template-rows: 1fr 8fr 2fr 1fr;
-
     margin:2rem;
 }
 .section-four .form-background{
@@ -321,11 +328,7 @@ nav ul li a:hover{
 .section-four .form-wrapper .form{
     grid-column: 2/4;
     grid-row: 2/3;
-}
-.section-four .form-wrapper .form .name{
-    width: 100%;
-    grid-column-start:2;
-    grid-row-end: 2;
+    justify-content: space-between;
 }
 .section-four .form-wrapper .button{
     z-index:4;
@@ -338,10 +341,20 @@ nav ul li a:hover{
     grid-column: 2/3;
     grid-row-start: 3;
 }
+.form-border{
+    justify-content: space-around;
+    margin-left: 3rem;
+    margin-top:.8rem;
+    z-index: -1;
+    width:51%;
+    height:56%;
+    border: 3px solid #FF8C00;
+    position: absolute;
+}
 
 
 /* input animation */
-.form{
+/* .form{
     width:50%;
     position:relative;
     height:50px;
@@ -414,20 +427,20 @@ nav ul li a:hover{
 .form input:focus + .label-alamat::after, .form input:valid + .label-alamat::after{
     transform:translateX(0%);
     visibility:visible;
-}
+} */
 /* section five */
 
 
 .section-five{
     position: relative;
-    height:60vh;
+    height:40vh;
     background-image: url(img/4-min.jpg);
     filter: brightness(50%);
     background-size: cover;
     bottom: 0;
 }
 footer{
-    height: 10vh;
+    height: 5vh;
     width: 100%;
     background: black;
     top: 100%;
