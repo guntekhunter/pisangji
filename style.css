@@ -303,6 +303,11 @@ nav ul li a:hover{
 .section-four .form-wrapper{
     position: relative;
     height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 8fr 10fr 1fr;
+    grid-template-rows: 1fr 8fr 2fr 1fr;
+
+    margin:2rem;
 }
 .section-four .form-background{
     background-size: cover;
@@ -313,8 +318,25 @@ nav ul li a:hover{
     background-image: url(img/2-min.jpg);
     position: absolute;
 }
+.section-four .form-wrapper .form{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.section-four .form-wrapper .form .name{
+    width: 100%;
+    grid-column-start:2;
+    grid-row-end: 2;
+}
 .section-four .form-wrapper .button{
     z-index:4;
+    grid-row: 3/4;
+    height: 90%;
+    width:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row-start: 3;
 }
 
 
@@ -372,6 +394,24 @@ nav ul li a:hover{
     
 }
 .form input:focus + .label-name::after, .form input:valid + .label-name::after{
+    transform:translateX(0%);
+    visibility:visible;
+}
+.content-alamat{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+.form input:focus + .label-alamat .content-alamat, .form input:valid + .label-alamat .content-alamat{
+    transform:translateY(-150%);
+    font-size: 14px;
+    border: none;
+    color: #FF8C00;
+    
+    
+}
+.form input:focus + .label-alamat::after, .form input:valid + .label-alamat::after{
     transform:translateX(0%);
     visibility:visible;
 }
